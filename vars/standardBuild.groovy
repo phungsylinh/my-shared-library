@@ -16,12 +16,12 @@ def call(Closure body) {
         docker.image(config.environment).inside {
             stage('Main Build') {
                 echo "Thực thi script chính..."
-                sh config.mainScript
+                //sh config.mainScript
             }
 
             stage('Post Build') {
                 echo "Thực thi post-script..."
-                sh config.postScript
+                //sh config.postScript
             }
         }
     }
